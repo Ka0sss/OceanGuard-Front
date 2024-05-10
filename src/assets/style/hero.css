@@ -1,0 +1,168 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit;
+}
+
+.container {
+  direction: flex;
+  justify-content: center;
+}
+
+.container {
+  background-color: #041421;
+  width: 100%;
+  height: 1063px;
+}
+
+/* texto hero*/
+
+.container-hero {
+  text-align: center;
+}
+
+.OceanGuardLogo {
+  animation: spin 0s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.container-hero h5 {
+  text-align: center;
+  color: #abd1c6;
+}
+
+.container-hero h1 {
+  text-align: center;
+  color: #f1f8f7;
+}
+
+/* end texto hero*/
+
+/* img */
+
+.container-hero img {
+  position: relative;
+  top: 50px;
+}
+
+.arrow img {
+  height: 80px;
+  width: 80px;
+  animation: bounce 3s ease infinite;
+  margin-top: 77px;
+}
+
+/* end img*/
+.gradiant {
+  width: 100%;
+  height: 250px;
+  background: rgb(7, 128, 128);
+  background: linear-gradient(180deg, #041421, rgba(7, 77, 102, 1) 100%);
+}
+
+/* Star Animation Arrow*/
+
+@keyframes bounce {
+  70% {
+    transform: translateY(0%);
+  }
+  80% {
+    transform: translateY(-15%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* End Animation Arrow*/
+
+/*media query*/
+@media (max-width: 1630px) {
+  .imagen-logo-hero{
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .imagen-logo-hero img{
+    max-width: 100%;
+    height: auto;
+  }
+  .container-hero h1 {
+    font-family: poppins, "sans-serif";
+    font-size: 10.625rem;
+    width: auto;
+  }
+  .titulo-ocean-hero{
+    margin-bottom: 15px;
+  }
+
+}
+@media (max-width: 580px) {
+  .container-hero h1 {
+    font-family: poppins, "sans-serif";
+    font-size: 150px;
+    width: auto;
+  }
+  .titulo-ocean-hero{
+  width: auto;
+
+  }
+  .titulo-ocean-hero h1{
+    font-size: 100px;
+  }
+}
+@media (max-width: 412px){
+  .titulo-ocean-hero{
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .preservar{
+    margin-top: 50px;
+  }
+  .imagen-logo-hero{
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+@media (max-width: 335px) {
+  .titulo-ocean-hero h1{
+    font-size: 80px;
+  }
+}
+@media (max-width: 280px){
+  .titulo-ocean-hero h1 {
+    font-size: 70px;
+  }
+  .titulo-ocean-hero{
+    margin-top: 50px;
+    margin-bottom: 60px;
+  }
+  .imagen-logo-hero{
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+@media (max-width: 540px){
+  .titulo-ocean-hero{
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  .preservar{
+    margin-top: 50px;
+  }
+}
+@media (max-width: 430px){
+  .imagen-logo-hero{
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
